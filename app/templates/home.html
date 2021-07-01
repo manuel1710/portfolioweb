@@ -1,0 +1,401 @@
+{% extends "base.html" %}
+
+{% block main %}
+<!-- <h1 class="page-header">INFO3180 Lab 4</h1> -->
+{% with messages = get_flashed_messages() %}
+  {% if messages %}
+    <div class="alert alert-success">
+      <ul class="flashes">
+      {% for message in messages %}
+        <li>{{ message }}</li>
+      {% endfor %}
+      </ul>
+    </div>
+  {% endif %}
+{% endwith %}
+
+
+<!-- =========================  BANNER AREA  ============================= -->
+<section class="site-banner">
+  <div class="container">
+    <div class="row">
+      <!-- Specifying Spaces for large and medium devices -->
+      <div class="col-lg-6 col-md-12 site-title">
+        <h3 class="title-text">Hey</h3>
+        <h1 class="title-text text-uppercase">I am Javian Anderson</h1>
+        <h4 class="title-text text-uppercase">Aspiring Computer Science Student</h4>
+        <div class="site-buttons">
+          <div class="d-flex flex-row flex-wrap">
+            <button type="button" class="btn button primary-button mr-4">Will You Hire Me?</button>
+            <button type="button" class="btn button secondary-button text-uppercase">Get CV</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6 col-md-12 banner-image">
+        <img src="../static/images/banner/banner-image.png" alt="banner-image" class="img-fluid">
+      </div>
+    </div>
+  </div>
+
+</section>
+
+<!-- =========================  END BANNER AREA  ============================= -->
+
+<!-- =========================  ABOUT AREA  ============================= -->
+
+<section class="about-area">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-lg-6 col-md-12">
+        <div class="about-image">
+          <img src="../static/images/about-us.png" alt="About Me" class="img-fluid">
+        </div>
+      </div>
+      <div class="col-lg-6 col-md-12 about-title">
+        <h2 class="text-upperclass pt-5">
+          <span>Let Me</span>
+          <span>introduce</span>
+          <span>myself</span>
+        </h2>
+        <div class="paragraph py-4 w-90">
+          <p class="para">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam maiores nemo quaerat voluptatem ipsam mollitia aspernatur! Nesciunt ipsum totam reprehenderit facilis unde nostrum odit ipsa dolorem aspernatur, quo necessitatibus adipisci saepe cum quae facere, culpa fugit qui mollitia pariatur quam.
+          </p>
+          <p class="para">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error culpa voluptates, minus iure ad dolor earum esse corporis reiciendis voluptas rerum aliquid deleniti perspiciatis ipsam dolorem. Mollitia ut minima omnis.
+          </p>
+        </div>
+        <button type="button" class="btn button primary-button text-uppercase">Download Resume</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =========================  END ABOUT AREA  ============================= -->
+
+<!-- =========================  START COMPANY AREA  ============================= -->
+
+<section class="brand-area">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-xl-6 col-lg-12 col-md-12">
+        <div class="first-row row">
+          <div class="col-lg-4 col-md-6 col-sm-6">
+            <div class="single-brand">
+              <img src="../static/images/brands/logo1.png" alt="Brand-1">
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-6">
+            <div class="single-brand">
+              <img src="../static/images/brands/logo2.png" alt="Brand-2">
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-6">
+            <div class="single-brand">
+              <img src="../static/images/brands/logo3.png" alt="Brand-3">
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-6">
+            <div class="single-brand">
+              <img src="../static/images/brands/logo4.png" alt="Brand-4">
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-6">
+            <div class="single-brand">
+              <img src="../static/images/brands/logo5.png" alt="Brand-5">
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-6">
+            <div class="single-brand">
+              <img src="../static/images/brands/logo6.png" alt="Brand-6">
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-6">
+            <div class="single-brand">
+              <img src="../static/images/brands/logo7.png" alt="Brand-7">
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-6">
+            <div class="single-brand">
+              <img src="../static/images/brands/logo8.png" alt="Brand-8">
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-6">
+            <div class="single-brand">
+              <img src="../static/images/brands/logo9.png" alt="Brand-9">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-xl-6 col-lg-12 col-md-12">
+        <div class="experience-area">
+          <div class="d-flex flex-row years-area">
+            <h2 class="p-3 years">None</h2>
+            <h2>
+              <span>Years</span>
+              <span>Experience</span>
+              <span>Working</span>
+            </h2>
+          </div>
+          <div class="d-flex flex-row flex-wrap call-area">
+            <span><i class="fas fa-phone-alt fa-3x px-3"></i></span>
+            <div class="call-now">
+              <a href="" class="text-uppercase h4">Call Now</a>
+              <span class="py-2">876-504-3325</span>
+            </div>
+          </div>
+          <div class="bg-panel"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =========================  END COMPANY AREA  ============================= -->
+
+<!-- =========================  START SERVICES AREA  ============================= -->
+<section class="services-area">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center services-title">
+        <h1 class="text-uppercase title-text">Services Offered</h1>
+        <p class="para">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur consequatur architecto aut facere ratione accusantium hic dicta! Molestias, eaque quisquam!
+        </p>
+      </div>
+    </div>
+    <div class="container services-list">
+      <div class="row">
+        <div class="col-lg-3 col-md-6 col-sm-12">
+          <div class="services">
+            <div class="services-img text-center py-4">
+              <img src="../static/images/services/s1.png" alt="Service 1">
+            </div>
+            <div class="card-body text-center">
+              <h5 class="card-title text-uppercase">Web Developer</h5>
+              <p class="card-text text-secondary">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt reiciendis, atque magnam laboriosam doloremque dolorum!
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12">
+          <div class="services">
+            <div class="services-img text-center py-4">
+              <img src="../static/images/services/s2.png" alt="Service 2">
+            </div>
+            <div class="card-body text-center">
+              <h5 class="card-title text-uppercase">Software Developer</h5>
+              <p class="card-text text-secondary">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt reiciendis, atque magnam laboriosam doloremque dolorum!
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12">
+          <div class="services">
+            <div class="services-img text-center py-4">
+              <img src="../static/images/services/s3.png" alt="Service 3">
+            </div>
+            <div class="card-body text-center">
+              <h5 class="card-title text-uppercase">Systems Admin</h5>
+              <p class="card-text text-secondary">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt reiciendis, atque magnam laboriosam doloremque dolorum!
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12">
+          <div class="services">
+            <div class="services-img text-center py-4">
+              <img src="../static/images/services/s4.png" alt="Service 4">
+            </div>
+            <div class="card-body text-center">
+              <h5 class="card-title text-uppercase">UI/UX</h5>
+              <p class="card-text text-secondary">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt reiciendis, atque magnam laboriosam doloremque dolorum!
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =========================  END SERVICES AREA  ============================= -->
+
+<!-- =========================  START PROJECT AREA  ============================= -->
+
+<section class="project-area">
+  <div class="container">
+    <div class="project-title pb-5">
+      <h1 class="text-uppercase title-h1">Recently Done Project</h1>
+      <h1 class="text-uppercase title-h1">Quality Work</h1>
+    </div>
+
+    <div class="button-group">
+      <button type="button" class="active" id='btn1' data-filter="*">All</button>
+      <button type="button" data-filter=".popular">Popular</button>
+      <button type="button" data-filter=".latest">Latest</button>
+      <button type="button">Following</button>
+      <button type="button">Upcoming</button>
+    </div>
+
+    <div class="row grid">
+      <div class="col-lg-4 col-md-6 col-sm-12 element-item latest">
+        <div class="our-project">
+          <div class="img">
+            <a class="test-popup-link" href="../static/images/portfolio/p1.jpg">
+            <img src="../static/images/portfolio/p1.jpg" alt="portfolio 1">
+            </a>
+          </div>
+          <div class="title py-4">
+            <h4 class="text-uppercase">Some Design</h4>
+            <span class="text-secondary">Latest, Portfolio</span>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 col-sm-12 element-item popular">
+        <div class="our-project">
+          <div class="img">
+            <a class="test-popup-link" href="../static/images/portfolio/p2.jpg">
+              <img src="../static/images/portfolio/p2.jpg" alt="portfolio 2">
+              </a>
+          </div>
+          <div class="title py-4">
+            <h4 class="text-uppercase">Some Design2</h4>
+            <span class="text-secondary">Popular, Portfolio</span>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 col-sm-12 element-item popular">
+        <div class="our-project">
+          <div class="img">
+            <a class="test-popup-link" href="../static/images/portfolio/p3.jpg">
+              <img src="../static/images/portfolio/p3.jpg" alt="portfolio 3">
+              </a>
+          </div>
+          <div class="title py-4">
+            <h4 class="text-uppercase">Some Design3</h4>
+            <span class="text-secondary">Popular, Portfolio</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =========================  END PROJECT AREA  ============================= -->
+
+
+<!-- =========================  START ABOUT ME AREA  ============================= -->
+
+<section class="about-me-area">
+  <div class="container">
+    <div class="row text-center">
+      <div class="col-12">
+        <div class="about-title">
+          <h1 class="text-uppercase title-h1">Client Feedback</h1>
+          <p class="para">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae vero voluptatum officia ipsum voluptatem ipsam aut ratione aspernatur facere maiores.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container carousel py-lg-5">
+    <div class="owl-carousel owl-theme">
+      <div class="client row">
+        <div class="col-lg-4 col-md-12 client-img">
+          <img src="../static/images/testimonials/t1.jpg" alt="testimonials 1" class="img-fluid">
+        </div>
+        <div class="col-lg-8 col-md-12 about-client">
+          <h4 class="text-uppercase">John Doe</h4>
+          <p class="para">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut repellendus deleniti ab cumque maxime excepturi.</p>
+        </div>
+      </div>
+      <div class="client row">
+        <div class="col-lg-4 col-md-12 client-img">
+          <img src="../static/images/testimonials/t2.jpg" alt="testimonials 2" class="img-fluid">
+        </div>
+        <div class="col-lg-8 col-md-12 about-client">
+          <h4 class="text-uppercase">Mark Cook</h4>
+          <p class="para">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut repellendus deleniti ab cumque maxime excepturi.</p>
+        </div>
+      </div>
+      <div class="client row">
+        <div class="col-lg-4 col-md-12 client-img">
+          <img src="../static/images/testimonials/t1.jpg" alt="testimonials 1" class="img-fluid">
+        </div>
+        <div class="col-lg-8 col-md-12 about-client">
+          <h4 class="text-uppercase">John Doe</h4>
+          <p class="para">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut repellendus deleniti ab cumque maxime excepturi.</p>
+        </div>
+      </div>
+      <div class="client row">
+        <div class="col-lg-4 col-md-12 client-img">
+          <img src="../static/images/testimonials/t2.jpg" alt="testimonials 2" class="img-fluid">
+        </div>
+        <div class="col-lg-8 col-md-12 about-client">
+          <h4 class="text-uppercase">Mark Cook</h4>
+          <p class="para">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut repellendus deleniti ab cumque maxime excepturi.</p>
+        </div>
+      </div>
+      <div class="client row">
+        <div class="col-lg-4 col-md-12 client-img">
+          <img src="../static/images/testimonials/t1.jpg" alt="testimonials 1" class="img-fluid">
+        </div>
+        <div class="col-lg-8 col-md-12 about-client">
+          <h4 class="text-uppercase">John Doe</h4>
+          <p class="para">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut repellendus deleniti ab cumque maxime excepturi.</p>
+        </div>
+      </div>
+      <div class="client row">
+        <div class="col-lg-4 col-md-12 client-img">
+          <img src="../static/images/testimonials/t2.jpg" alt="testimonials 2" class="img-fluid">
+        </div>
+        <div class="col-lg-8 col-md-12 about-client">
+          <h4 class="text-uppercase">Mark Cook</h4>
+          <p class="para">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut repellendus deleniti ab cumque maxime excepturi.</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- =========================  END ABOUT ME AREA  ============================= -->
+
+
+<!-- =========================  SUBSCRIBE ME AREA  ============================= -->
+<section class="subscribe-us-area">
+  <div class="container subscribe">
+    <div class="row">
+      <div class="col-lg-12 text-center subscribe-title">
+        <h4 class="text-uppercase">Connect With Me</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, earum!</p>
+      </div>
+    </div>
+    <div class="d-sm-flex justify-content-center">
+      <form class="w-50">
+        <div class="row d-flex flex-row flex-wrap">
+          <div class="col input-textbox">
+            <input type="text" name="" id="txtemail" class="form-control" placeholder="Email">
+          </div>
+          <div class="col">
+            <div class="btn-submit">
+              <button type="submit" class="btn btn-success float-right">Subcribe</button>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- =========================  END SUBSCRIBE ME AREA  ============================= -->
+
+
+{% endblock %}

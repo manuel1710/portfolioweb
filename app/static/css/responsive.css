@@ -1,0 +1,50 @@
+/* IF the viewport is equal to 340px or less */
+@media only screen and (max-width:340px){
+    .little-touch nav .navbar-brand,
+    .little-touch nav,
+    main .subscribe-us-area .subscribe .subscribe-title,
+    main .subscribe-us-area .subscribe .subscribe-title p,h4,
+    main .subscribe-us-area .subscribe,
+    main .services-area{
+        padding: 2%;
+        margin: 0%;
+    }    
+    /* .little-touch nav .navbar-brand,
+    .little-touch nav{
+        width: 50%;
+    } */
+    main .site-banner .site-title h1{
+        font-size: 41px;
+    }
+
+    main .subscribe-us-area .subscribe form .input-textbox input{
+        width: 15rem;
+    }
+
+    main > .services-area .services{
+        width: 13rem;
+    }
+}
+
+@media only screen and (max-width:792px){
+    main .about-area .about-title h2>span{
+        font-size: 31px;
+        letter-spacing: 10px;
+    }
+    main .brand-area .experience-area .years-area{
+        padding-left: 1%;
+        width: 49%;
+    }
+    main .brand-area .experience-area .bg-panel{
+        margin-left: 30%;
+        width:80%;
+    }
+
+    main .brand-area .experience-area .call-area{
+        padding-left: 3%;
+    }
+
+    main .project-area .button-group button{
+        font:normal 500 18px/40px;
+    }
+}
